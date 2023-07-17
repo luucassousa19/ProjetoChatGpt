@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Aplicação</title>
+</head>
+<body>
+    <h1>Minha Aplicação</h1>
+    <form action="/" method="post">
+        <input type="text" name="pergunta" placeholder="Digite sua pergunta">
+        <button type="submit">Enviar</button>
+    </form>
+    {% if pergunta %}
+        <h2>Pergunta:</h2>
+        <p>{{ pergunta }}</p>
+        <h2>Resposta:</h2>
+        <p>{{ resposta }}</p>
+    {% endif %}
+</body>
+</html>
